@@ -30,3 +30,5 @@ class LoginTest(BaseTest):
         # 5. (Sprawdź, czy można kliknąć LogOut)
         # TODO:
         sleep(1.5)
+
+        https://github.com/kkolanski/Demoblaze2025
