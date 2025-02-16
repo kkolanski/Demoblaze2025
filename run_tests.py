@@ -1,3 +1,4 @@
+import os
 import unittest
 from tests.login_tests import LoginTest
 
