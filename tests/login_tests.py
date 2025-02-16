@@ -19,7 +19,7 @@ class LoginTest(BaseTest):
     #     self.assertEqual("Please fill out Username and Password.", self.login_page.get_alert_message())
     #     self.login_page.confirm_alert()
 
-    @data(*DataReader.get_csv_data("valid_login_credentials.csv"))
+    @data(*DataReader.get_csv_data("test_data/valid_login_credentials.csv"))
     @unpack
     def testValidLogin(self, username, password):
         # 1. Wpisz login
