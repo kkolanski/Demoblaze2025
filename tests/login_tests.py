@@ -28,7 +28,10 @@ class LoginTest(BaseTest):
         welcome_text_act = self.home_page.get_welcome_username_text()
         self.assertEqual(f"Welcome {username}", welcome_text_act)
         # 5. (Sprawdź, czy można kliknąć LogOut)
+        self.home_page.click_log_out()
+        # Sprawdź, czy przyciski zmieniły się na Log in, Sign up
+        self.assertEqual("Log in", self.home_page.get_login_text())
+        self.assertEqual("Sign up", self.home_page.get_sign_up_text())
+
         # TODO:
         sleep(1.5)
-
-        https://github.com/kkolanski/Demoblaze2025
